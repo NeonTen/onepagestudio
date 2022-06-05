@@ -1,0 +1,90 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    @apply transition ease-linear;
+}
+.admin-bar header {
+    @apply mt-8;
+}
+
+/* Slider */
+.slick-dots {
+    @apply flex space-x-3 absolute -bottom-16 left-1/2 -translate-x-1/2;
+}
+.slick-dots li.slick-active button {
+    @apply bg-primary-color opacity-100;
+}
+.slick-dots button {
+    @apply w-[35px] h-[3px] bg-black/30 p-0 m-0 -indent-[9999px] cursor-pointer;
+}
+.testimonial-slider .slick-dots {
+    @apply lg:left-[390px] lg:bottom-12 lg:translate-x-0
+}
+
+/* Carousel */
+.carousel .slick-track {
+    @apply flex justify-between gap-4 md:gap-9;
+}
+.carousel .slick-track::after,
+.carousel .slick-track::before {
+    @apply hidden;
+}
+
+.vision-box {
+    box-shadow: 1px 1px 36px rgb(0 0 0 / 16%);
+}
+
+/* Util */
+.wysiwyg-editor h1,
+.wysiwyg-editor h2,
+.wysiwyg-editor h3,
+.wysiwyg-editor h4,
+.wysiwyg-editor h5,
+.wysiwyg-editor h6 {
+    @apply text-dark-blue-color font-semibold mb-1;
+}
+.wysiwyg-editor h1 {
+    @apply text-3xl;
+}
+.wysiwyg-editor h2 {
+    @apply text-2xl;
+}
+.wysiwyg-editor h3 {
+    @apply text-xl;
+}
+.wysiwyg-editor h4 {
+    @apply text-lg;
+}
+.wysiwyg-editor h5 {
+    @apply text-lg;
+}
+.wysiwyg-editor h6 {
+    @apply text-base;
+}
+.wysiwyg-editor p {
+    @apply text-text-color;
+}
+.wysiwyg-editor ul {
+    @apply space-y-3;
+}
+.wysiwyg-editor ul li {
+    @apply pl-6 relative;
+}
+.wysiwyg-editor ul li::before {
+    @apply content-[''] flex w-2 h-2 bg-primary-color absolute left-0 top-2;
+}
+
+/* WP Forms */
+.wpforms-label-hide {
+    @apply hidden;
+}
+.wpforms-field-container {
+    @apply grid sm:grid-cols-2 gap-[30px];
+}
+.wpforms-field-textarea {
+    @apply sm:col-span-2 mb-6;
+}
+.wpforms-field-textarea textarea {
+    @apply h-44;
+}
