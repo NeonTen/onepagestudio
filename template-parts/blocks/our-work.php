@@ -51,7 +51,7 @@ if ( ! $small_text && ! $heading && ! $desc && ! have_rows( 'members_lists' ) ) 
 		// Check Work members lists exists.
 		if ( have_rows( 'members_lists' ) ) :
 
-			echo '<div class="work-carousel mt-10 -mx-[15px]">';
+			echo '<div class="work-carousel mt-10 -mx-[15px] mb-8 lg:mb-0">';
 
 			// Loop through rows.
 			while ( have_rows( 'members_lists' ) ) :
